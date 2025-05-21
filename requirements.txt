@@ -1,0 +1,8 @@
+beautifulsoup4==4.13.4
+gspread==6.2.0
+gspread_dataframe==4.0.0
+numpy==1.26.3
+pandas==2.2.3
+protobuf==6.30.2
+Requests==2.32.3
+SQLAlchemy==2.0.40
