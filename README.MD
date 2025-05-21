@@ -11,7 +11,9 @@ Scrapes data from: https://fashion-studio.dicoding.dev/
 3. Ensures all columns are in the correct data types
 
 - **Load**
+
 Saves the clean, transformed dataset into:
+
 1. CSV file
 2. Google Spreadsheet (via Google Sheets API)
 3. Local PostgreSQL database
@@ -34,21 +36,25 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ### Set up environment variable using dotenv
 Ensure you have installed `python-dotenv`, then fill in the necessary keys
+```
 SPREADSHEET_ID=your_spreadsheet_id
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+```
 
 ### Run ETL script
-python main.py
+```python main.py```
 
-### Run unit test in tests folder
-pytest tests/ -v
+### Run unit test in the tests folder
+```pytest tests/ -v```
 
-### Run test coverage in tests folder
-pytest tests/ --cov=tests --cov-report=term-missing
+### Run test coverage in the tests folder
+```pytest tests/ --cov=tests --cov-report=term-missing```
 
 ## 📁 Output
 - Data stored in fashion_product.csv
 - Data stored in Google Spreadsheet
 - Data loaded into local PostgreSQL database
 
-The test case cover 97% with pytest
+After testing with `pytest`, the code built covers 97% coverage
+
+![Image](https://github.com/user-attachments/assets/7ded3119-5243-4671-a7c7-d930e343b59e)
