@@ -3,6 +3,7 @@ This project is an ETL (Extract, Transform, Load) pipeline built using Python. I
 
 ## 🔧 Features
 - **Extract**
+
 Scrapes data from: https://fashion-studio.dicoding.dev/
 
 - **Transform**
@@ -22,32 +23,32 @@ Saves the clean, transformed dataset into:
 Includes test cases using `pytest` to ensure data integrity and pipeline reliability
 
 ## 🚀 How to Replicate and Run the Project
-### Clone the repository
+### 1. Clone the repository
 ```git clone https://github.com/roissyahf/simple-etl-pipeline.git```
 
-### Set up virtual environment
+### 2. Set up virtual environment
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### Install Dependency
+### 3. Install Dependency
 ```pip install -r requirements.txt```
 
-### Set up environment variable using dotenv
+### 4. Set up environment variable using dotenv
 Ensure you have installed `python-dotenv`, then fill in the necessary keys
 ```
 SPREADSHEET_ID=your_spreadsheet_id
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
 ```
 
-### Run ETL script
+### 5. Run ETL script
 ```python main.py```
 
-### Run unit test in the tests folder
+### 6. Run unit test in the tests folder
 ```pytest tests/ -v```
 
-### Run test coverage in the tests folder
+### 7. Run test coverage in the tests folder
 ```pytest tests/ --cov=tests --cov-report=term-missing```
 
 ## 📁 Output
